@@ -1,0 +1,15 @@
+{% extends "head.html" %}
+{% block content %}
+<body>
+    <div class="rezults">
+        <p style="font-size: 350%;"><b>Ваш результат:</b></p>
+    </div>
+    <div class="blockRezult">
+        <p>Поздравляем! Вы — <b>{{person}}</b></p>
+        <div class="line1" style="display: flex">
+            <img src="{{ url_for('static', filename='images/shmu.PNG') }}" style="height:320px; width:320px">
+            <p>{{text}}</p>
+        </div>
+    </div>
+</body>
+{% endblock %}

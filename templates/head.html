@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main4.css') }}">
+		<meta charset="utf-8">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+		<script src="{{ url_for('static', filename='javascript/script.js') }}" defer></script>
+		<title>funshmu</title>
+	</head>
+	<body>
+		<div class="hat">
+			<div class='name_of_the_site'>
+				<img class='logo' src="{{ url_for('static', filename='images/shmu.PNG') }}">
+				<h1 style="margin-left: 2%;">FUNSHMU</h1>
+			</div>
+			<div class="info">
+				<p>Здесь вы можете найти интересную информацию про предметы, пройти тестирование, которое поможет вам с выбором предмета на будущую смену.</p>
+			</div>
+			<div class="buttons">
+				<div style="margin:1%; margin-bottom: auto;;">
+					<a class="btn" href="/">Главная</a>
+				</div>
+				<div style="margin:1%; margin-bottom: auto;">
+					<a class="btn" href="/vozhatie">Вожатые</a>
+				</div>
+				<div style="margin:1%; margin-bottom: auto;">
+					<a class="btn" href="/traditions">Традиции</a>
+				</div>
+				<div style="margin:1%; margin-bottom: auto;">
+					<a class="btn" href="/memes">Мемы</a>
+				</div>
+				<div style="margin:1%; margin-bottom: auto;">
+					<a class="btn" href="/testing">Тест на вожатого</a>
+				</div>
+				<div style="margin:1%; margin-bottom: auto;">
+					<a class="btn" href="/test_1">Выбор предмета</a>
+				</div>
+			</div>
+		</div>
+	
+	<main role="main" class="container">
+ 		{% block content %}{% endblock %}
+	</main>
+	<div class="footer">
+		<ol style="list-style-type: none;">
+			<li><a class='footer_a' href="/">Главная</a></li>
+			<li><a class='footer_a' href="/vozhatie">Вожатые</a></li>
+			<li><a class='footer_a' href="/traditions">Традиции</a></li>
+			<li><a class='footer_a' href="/memes">Мемы</a></li>
+			<li><a class='footer_a' href="/testing">Тест на вожатого</a></li>
+			<li><a class='footer_a' href="/test_1">Выбор предмета</a></li>
+		</ol>
+		<a class="off" href="https://shkolamolod.ru/">Официальный сайт Школы Молодого Учёного</a>
+	</div>
+	</body>
+</html>

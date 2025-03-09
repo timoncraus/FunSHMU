@@ -1,0 +1,16 @@
+{% extends "head.html" %}
+{% block content %}
+	<body>
+        <div class="main2 circle">
+            <h1 style="text-align:center">Тебе стоит выбрать английский язык!!!</h1>
+            <div class="res">
+                <img src="{{ url_for('static', filename='images/eng.PNG') }}" style="height: 50%; object-fit: contain; margin-left: 20%; margin-top: 10%">
+                <p class="obsh cir" style="color: rgb(50, 130, 65); text-align: center; padding-left: 15%; padding-right: 15%">
+                    На сегодняшний день английский язык является одним из самых популярных языков мира.
+                    Приблизительно 1,5 млрд. человек владеет английским языком, и где-то 1 млрд. изучает его.
+                    Выполнение проекта в ШМУ, связанного с английским языком, будет очень увлекательным.
+                </p>
+            </div>
+        </div>
+	</body>
+{% endblock %}

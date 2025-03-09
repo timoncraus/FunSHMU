@@ -1,0 +1,17 @@
+{% extends "head.html" %}
+{% block content %}
+<body>
+    <form action="#" method="post">
+        <div class="content withBackground">
+            <div class="confirmed">{{confirmed}}</div>
+            <div class="maxLength">{{maxLength}}</div>
+            <div class="minLength">{{minLength}}</div>
+            <div class="imgLogo"><img  class="myImg" style="border-radius: 100%; border: 14px solid white;" src="{{ url_for('static', filename='images/ozatie.PNG') }}"></div>
+            <p style="color:rgb(25, 56, 31); padding: 40px 0;"><b>Тест на вожатого</b></p>
+            <div style="background-color:rgb(184, 216, 190);"><p style="color:rgb(60, 100, 67); padding: 40px 0;"><b>(чтобы переходить к следующему вопросу, нажимайте сначала кнопку "Подтвердить ответ", а потом кнопку "Следующее")</b></p></div>
+            <div onclick={{link}} class="next" type="submit"><p><b>Начать</b></p></div>
+        </div>
+    </form>
+</body>
+
+{% endblock %}

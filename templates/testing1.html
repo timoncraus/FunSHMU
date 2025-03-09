@@ -1,0 +1,28 @@
+{% extends "head.html" %}
+{% block content %}
+<body>
+    <form action={{link2}} method="post" id="form">
+        <div class="content withBackground">
+            <div class="activeButtons">{{activeButtons}}</div>
+            <div class="confirmed">{{confirmed}}</div>
+            <div class="maxLength">{{maxLength}}</div>
+            <div class="minLength">{{minLength}}</div>
+            
+            <div class="question1">
+                <p class="textQues"><b>Вопрос №{{num}}</b></p>
+                <p class="textQues">{{text}}</p>
+            </div>
+
+            <div style="display:flex; align-items:baseline; justify-content: center;">
+                <div class="yes variant" id="E1"><p class="labelYN">ДА</p></div>
+                <div class="no variant" id="E2"><p class="labelYN">НЕТ</p></div>
+                <input value="1" type="radio" name="v1" style="display: none;" id="radio"> 
+                <input value="-1" type="radio" name="v1" style="display: none;" id="radio">
+            </div>
+	        
+            <div onclick="myFunc()" class="sendBlock"><button class="send" type="submit" value="Отправить" id="btnSubmit"><p>Подтвердить ответ</p></button></div> <!--onclick={{link}}-->
+            <div id="enot" onclick={{link}} class="next" type="submit"><p>Следующее</p></div>
+        </div>
+    </form>
+</body>
+{% endblock %}

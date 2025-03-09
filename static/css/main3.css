@@ -1,0 +1,98 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14pt;
+    background-color:rgb(226, 226, 226) ;
+    color: rgb(50, 130, 65);
+}
+h2 {
+    font-size: 30pt;
+    color: whitesmoke;
+    margin-left: 2%;
+}
+h3 {
+    font-size: 24pt;
+    color: whitesmoke;
+    margin-left: 2%;
+    font-style: italic;
+}
+.h2_2 {
+    color: rgb(50, 130, 65);
+}
+.name_of_the_site{
+    color: rgb(50, 130, 65);
+    text-align:left;
+    margin-right: 10px;
+    font-size: 30pt;
+    display: flex;
+}
+
+.btn{
+    text-align:center;
+    margin-top: 20px;
+    border: 3px solid  rgb(50, 130, 65);
+    padding: 10px;
+    width: 400px;
+    color:#f0f0f0;
+    background-color:rgb(50, 130, 65);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color:whitesmoke;
+    color:rgb(50, 130, 65);
+}
+.btn:active {
+    transform: translateX(4px);
+}
+.hat {
+    background-color: white;
+    border-radius: 10px;
+    margin: 1%;
+    padding: 1%;
+}
+.buttons {
+    background-color:rgb(50, 130, 65);
+    padding: 30px;
+}
+.main {
+    background-color: rgb(50, 130, 65);
+    margin: 1%;
+    border-radius: 10px;
+    padding: 1%;
+
+}
+.obsh {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20pt;
+    color:whitesmoke;
+    text-align: justify;
+    margin: 2%;
+}
+.logo {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    -webkit-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+}
+.logo:hover {
+   transform: rotate(360deg);
+   opacity: 0.3;
+}
+.text_facts {
+    display: flex;
+    font-size: 26pt;
+}
+.main2 {
+    background-color: white;
+    margin: 1%;
+    border-radius: 10px;
+    padding: 1%;
+}
+ol {
+    color: whitesmoke;
+    font-size: 16pt;
+    font-style: italic;
+    margin: 1%
+}

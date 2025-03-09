@@ -1,0 +1,24 @@
+{% extends "head.html" %}
+{% block content %}
+<body>
+    <form action={{link2}} method="post" id="form">
+        <div class="content withBackground">
+            <div class="activeButtons">{{activeButtons}}</div>
+            <div class="confirmed">{{confirmed}}</div>
+            <div class="maxLength">{{maxLength}}</div>
+            <div class="minLength">{{minLength}}</div>
+            
+            <div class="question1">
+                <p class="textQues"><b>Вопрос №{{num}}</b></p>
+                <p class="textQues">{{text}}</p>
+            </div>
+
+            <input type="range" min="0" max="100" value="50" class="range blue" id="myrange" name="rr">
+            <p id="textRange"class="labelYN" style="font-size: 50px;">50%</p>
+	    
+            <div onclick="myFunc()" class="sendBlock"><button class="send" type="submit" value="Отправить" id="btnSubmit"><p>Подтвердить ответ</p></button></div> <!--onclick={{link}}-->
+            <div id="enot" onclick={{link}} class="next" type="submit"><p>Следующее</p></div>
+        </div>
+    </form>
+</body>
+{% endblock %}

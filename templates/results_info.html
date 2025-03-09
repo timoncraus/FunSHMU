@@ -1,0 +1,14 @@
+{% extends "head.html" %}
+{% block content %}
+	<body>
+        <div class="main2 circle">
+            <h1 style="text-align:center">Тебе стоит выбрать информатику!!!</h1>
+            <div class="res">
+                <img src="{{ url_for('static', filename='images/info.PNG') }}" style="height: 50%; object-fit: contain; margin-left: 20%; margin-top: 10%" hover="">
+                <p class="obsh cir" style="color: rgb(50, 130, 65); text-align: center; padding-left: 15%; padding-right: 15%">
+                    Изучение информатики открывает новые возможности: создавать и управлять роботами; перекладывать на компьютер решение сложных задач;
+                    превратить идеи в реальность. Выполняя проект по этой учебной дисциплине, участники смены могут создать свои сайты, полезные программы или даже несложные игры.
+            </div>
+        </div>
+	</body>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "head.html" %}
+{% block content %}
+<body>
+    <form action={{link2}} method="post" id="form">
+        <div class="content withBackground">
+            <div class="activeButtons">{{activeButtons}}</div>
+            <div class="confirmed">{{confirmed}}</div>
+            <div class="maxLength">{{maxLength}}</div>
+            <div class="minLength">{{minLength}}</div>
+            
+            <div class="question1">
+                <p class="textQues"><b>Вопрос №{{num}}</b></p>
+                <p class="textQues">{{text}}</p>
+            </div>
+
+            <div style="display: flex;  flex-direction:row; justify-content:center;">
+                <div class="line1">
+                    <div class="block1 variant"><p class="labelYN">{{variant1}}</p></div>
+                    <div class="block2 variant"><p class="labelYN">{{variant2}}</p></div>
+                </div>
+                <div class="line2">
+                    <div class="block3 variant"><p class="labelYN">{{variant3}}</p></div>
+                    <div class="block4 variant"><p class="labelYN">{{variant4}}</p></div>
+                </div>
+            
+                <input value="1" type="checkbox" name="v1" style="display: none;" id="radio"> 
+                <input value="2" type="checkbox" name="v2" style="display: none;" id="radio">
+                <input value="3" type="checkbox" name="v3" style="display: none;" id="radio">
+                <input value="4" type="checkbox" name="v4" style="display: none;" id="radio">
+            </div>
+            
+            <div onclick="myFunc()" class="sendBlock"><button class="send" type="submit" value="Отправить" id="btnSubmit"><p>Подтвердить ответ</p></button></div> <!--onclick={{link}}-->
+            <div id="enot" onclick={{link}} class="next" type="submit"><p>Следующее</p></div>
+        </div>
+    </form>
+</body>
+{% endblock %}

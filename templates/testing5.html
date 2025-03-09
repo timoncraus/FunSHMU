@@ -1,0 +1,52 @@
+{% extends "head.html" %}
+{% block content %}
+<body>
+    <form action={{link2}} method="post" id="form">
+        <div class="content withBackground">
+            <div class="activeButtons">{{activeButtons}}</div>
+            <div class="confirmed">{{confirmed}}</div>
+            <div class="maxLength">{{maxLength}}</div>
+            <div class="minLength">{{minLength}}</div>
+            
+            <div class="question1">
+                <p class="textQues"><b>Вопрос №{{num}}</b></p>
+                <p class="textQues">{{text}}</p>
+                <p class="textQues">(максимум ответов: {{maxLength}})</p>
+            </div>
+
+            <div style="display: flex;  flex-direction:column; justify-content:center; width: 750px; margin-right: auto; margin-left: auto;">
+                <div class="line1" style="display: flex; align-items: baseline;">
+                    <div class="block1 variant"><p class="labelYN">{{variant1}}</p></div>
+                    <div class="block3 variant"><p class="labelYN">{{variant2}}</p></div>
+                </div>
+                <div class="line2" style="display: flex; align-items: baseline;">
+                    <div class="block6 variant"><p class="labelYN">{{variant3}}</p></div>
+                    <div class="block6 variant"><p class="labelYN">{{variant4}}</p></div>
+                </div>
+                <div class="line3" style="display: flex; align-items: baseline;">
+                    <div class="block6 variant"><p class="labelYN">{{variant5}}</p></div>
+                    <div class="block6 variant"><p class="labelYN">{{variant6}}</p></div>
+                </div>
+                <div class="line4" style="display: flex; align-items: baseline;">
+                    <div class="block6 variant"><p class="labelYN">{{variant7}}</p></div>
+                    <div class="block6 variant"><p class="labelYN">{{variant8}}</p></div>
+                </div>
+                <div class="block5 variant"><p class="labelYN">{{variant9}}</p></div>
+            
+                <input value="1" type="radio" name="v1" style="display: none;" id="radio"> 
+                <input value="2" type="radio" name="v2" style="display: none;" id="radio">
+                <input value="3" type="radio" name="v3" style="display: none;" id="radio">
+                <input value="4" type="radio" name="v4" style="display: none;" id="radio">
+                <input value="5" type="radio" name="v5" style="display: none;" id="radio">
+                <input value="6" type="radio" name="v6" style="display: none;" id="radio">
+                <input value="7" type="radio" name="v7" style="display: none;" id="radio">
+                <input value="8" type="radio" name="v8" style="display: none;" id="radio">
+                <input value="9" type="radio" name="v9" style="display: none;" id="radio">
+            </div>
+            
+            <div onclick="myFunc()" class="sendBlock"><button class="send" type="submit" value="Отправить" id="btnSubmit"><p>Подтвердить ответ</p></button></div> <!--onclick={{link}}-->
+            <div id="enot" onclick={{link}} class="next" type="submit"><p>Следующее</p></div>
+        </div>
+    </form>
+</body>
+{% endblock %}

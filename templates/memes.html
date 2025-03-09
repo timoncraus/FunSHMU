@@ -1,0 +1,9 @@
+{% extends "head.html" %}
+{% block content %}
+	<body>
+        <div class="main circle">
+                <img src="{{ url_for('static', filename='images/mem1.JPG') }}" style="width: 70%; border-radius: 10px; margin-bottom: 2%">
+                <img src="{{ url_for('static', filename='images/mem2.JPG') }}" style="width: 70%; border-radius: 10px; margin-bottom: 2%">
+        </div>
+	</body>
+{% endblock %}

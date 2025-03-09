@@ -1,0 +1,15 @@
+{% extends "head.html" %}
+{% block content %}
+	<body>
+        <div class="main2 circle">
+            <h1 style="text-align:center">Тебе стоит выбрать русский язык или литературу!!!</h1>
+            <div class="res">
+                <img src="{{ url_for('static', filename='images/rus.PNG') }}" style="width: 70%; object-fit: contain; margin-left: 14%; margin-top: 10%">
+                <p class="obsh cir" style="color: rgb(50, 130, 65); text-align: center; padding-left: 15%; padding-right: 15%;">
+                    Русский язык таит в себе много загадок, несмотря на то, что мы являемся его носителями. Изучение различных его аспектов может стать поводом для
+                    выполненпия интересного проекта по этому учебному предмету. На первый взгляд пары могут показаться скучными, но не спешите судить книгу по обложке -
+                    вым обязательно понравится процесс выполнения проекта.
+            </div>
+        </div>
+	</body>
+{% endblock %}

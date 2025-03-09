@@ -1,0 +1,64 @@
+{% extends "head.html" %}
+{% block content %}
+<br>
+<div class="main circle">
+	<h1 style="color: white; text-align: center;">Как легко выбрать предмет в ШМУ?</h1>
+    <p class="obsh" style="text-align: center;">
+        Пройди тест и узнай, какой предмет в школе молодых учёных тебе стоит выбрать.
+    </p>
+	<form action="" method="post">
+		{{ form.hidden_tag() }}
+        <div class="question">
+            <h3 >{{ form.q1.label (style="color: rgb(50, 130, 65)")}}</h3>
+            <a>{{ form.q1 (style='list-style-type: none; margin: 1%; margin-top: 0')}}</a>
+        </div>
+
+        <br><br>
+        <div class="question">
+		<h3>{{ form.q2.label  (style="color: rgb(50, 130, 65)")}}</h3>
+			<a>{{ form.q2  (style='list-style-type: none; margin: 1%; margin-top: 0')}}</a>
+        </div>
+
+        <br><br>
+        <div class="question">
+		<h3>{{ form.q3.label  (style="color: rgb(50, 130, 65)") }}</h3>
+			<a>{{ form.q3  (style='list-style-type: none; margin: 1%; margin-top: 0')}}</a>
+        </div>
+
+        <br><br>
+        <div class="question">
+            <h3>{{ form.q4.label  (style="color: rgb(50, 130, 65)") }}</h3>
+                <a>{{ form.q4  (style='list-style-type: none; margin: 1%; margin-top: 0')}}</a>
+        </div>
+        <br><br>
+
+        <div class="question">
+            <h3>{{ form.q5.label  (style="color: rgb(50, 130, 65)") }}</h3>
+                <a>{{ form.q5  (style='list-style-type: none; margin: 1%; margin-top: 0')}}</a>
+        </div>
+        <br><br>
+
+        <div class="question">
+            <h3>{{ form.q6.label  (style="color: rgb(50, 130, 65)") }}</h3>
+                <a>{{ form.q6 (style='list-style-type: none; margin: 1%; margin-top: 0')}}</a>
+        </div>
+        <br><br>
+        
+        <div class="question">
+            <h3 style="color: rgb(50, 130, 65)">Как бы вы описали идеальную работу?</h3>
+            <ol style='list-style-type: none;'>
+                <li><a>{{ form.bool1 (style='cursor: pointer;')}} {{ form.bool1.label }}</a></li>
+                <li><a>{{ form.bool2 (style='cursor: pointer;')}} {{ form.bool2.label }}</a></li>
+                <li><a>{{ form.bool3 (style='cursor: pointer;')}} {{ form.bool3.label }}</a></li>
+                <li><a>{{ form.bool4 (style='cursor: pointer;')}} {{ form.bool4.label }}</a></li>
+                <li><a>{{ form.bool5 (style='cursor: pointer;')}} {{ form.bool5.label }}</a></li>
+                <li><a>{{ form.bool6 (style='cursor: pointer;')}} {{ form.bool6.label }}</a></li>
+                <li><a>{{ form.bool7 (style='cursor: pointer;')}} {{ form.bool7.label }}</a></li>
+                <li><a>{{ form.bool8 (style='cursor: pointer;')}} {{ form.bool8.label }}</a></li>
+            </ol>
+        </div>
+		<br>
+		{{ form.submit(type="submit", class="btn_2") }}
+	</form>
+</div>
+{% endblock %}

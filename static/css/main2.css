@@ -1,0 +1,28 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14pt;
+    background-color:rgb(226, 226, 226) ;
+    color: rgb(67, 102, 167);
+}
+.name_of_the_site{
+    text-align:left;
+    margin-right: 32%;
+}
+.btn{
+    text-align:center;
+    margin: 1%;
+    margin-left: 1%;
+    border: 3px solid  rgb(85, 130, 212);
+    padding: 0.5%;
+    color:#f0f0f0;
+    background-color:rgb(85, 130, 212);
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .btn:hover {
+    background-color:whitesmoke;
+    color:rgb(85, 130, 212);
+  }
+  .btn:active {
+    transform: translateX(4px);
+  }

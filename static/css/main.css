@@ -1,0 +1,10 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14pt;
+    background-color:rgb(226, 226, 226) ;
+    color: rgb(67, 102, 167);
+}
+.name_of_the_site{
+    text-align:left;
+    margin-right: 32%;
+}

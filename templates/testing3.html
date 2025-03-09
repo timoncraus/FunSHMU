@@ -1,0 +1,21 @@
+{% extends "head.html" %}
+{% block content %}
+<body>
+    <div class="withBackground">
+        <div class="maxLength">{{maxLength}}</div>
+        <div class="minLength">{{minLength}}</div>
+        <div class="question1">
+            <p class="textQues"><b>Вопрос №{{num}}</b></p>
+            <p class="textQues">{{text}}</p>
+        </div>
+        <div style="display: flex;  flex-direction:column; align-items: center;">
+            <div class="line1" style="display: flex; align-items: baseline;">
+                <div class="block1 variant"><p class="labelYN">вариант</p></div>
+                <div class="block3 variant"><p class="labelYN">вариант</p></div>
+            </div>
+            <div class="block5 variant"><p class="labelYN">вариант</p></div>
+        </div>
+        <div class="next" type="submit"><p>Следующее</p></div>
+    </div>
+</body>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "head.html" %}
+{% block content %}
+	<body>
+        <div class="main2 circle">
+            <h1 style="text-align:center">Тебе стоит выбрать биологию!!!</h1>
+            <div class="res">
+                <img src="{{ url_for('static', filename='images/bio.PNG') }}" style="height: 50%; object-fit: contain; margin-left: 17%; margin-top: 10%">
+                <p class="obsh cir" style="color: rgb(50, 130, 65); text-align: center; padding-left: 15%; padding-right: 15%">
+                    Человек является частью живой природы, он существует в мире, который населен огромным количеством разнообразных живых организмов.
+                    Все эти организмы взаимосвязаны друг с другом и постоянно оказывают друг на друга влияние.
+                    Выполнение проекта по биологии поможет лучше узнать как устроен человек и окружающий мир.
+            </div>
+        </div>
+	</body>
+{% endblock %}
